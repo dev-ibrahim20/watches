@@ -8,25 +8,12 @@
          <span id="demo">{{$count}}</span>
     </a>
 </div>
-<div class="small-container" style="height: auto; margin-bottom: 170px">
+<div class="small-container" style="height: auto">
     <div class="child child-2">
         <h2>Catalog</h2>
     </div>
     <div class="child">
-            @foreach($index as $ind)
-            <div class="childprods">
-              @php 
-              $imge = explode('&', $ind->image);
-              @endphp
-                @for($i = 0; $i < count($imge); $i++)
-                <a href="{{url('product/order/'.$ind->id)}}"><img src="{{asset('frontend/images/product/'.$imge[0])}}"></a>
-                @break
-                @endfor
-                <h4>{{$ind->name}}</h4>
-                <p>L.E {{$ind->price}}</p>
-            </div>
-            
-            @endforeach
+        <div class="alert alert-danger" style='height: 500px'>Sorry, not found anything here.....</div>
     </div>
 </div>
 @endsection

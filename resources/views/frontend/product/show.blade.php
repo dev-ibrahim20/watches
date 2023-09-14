@@ -17,7 +17,6 @@
                 @endfor
                 <h5><span>Name</span>: {{$ind->name}}-<span>Color</span>: {{$ind->color}}</h5>
                 <h5><span>Price</span>: {{$ind->total - $ind->drive_cost}} L.E</h5>
-                <h5><span>Delivery</span>: {{$ind->drive_cost}} L.E</h5>
                 <hr>
                 <h5><span>Check</span>: {{$ind->total}} L.E</h5>
                 <a href="{{url('/product/order/delete/'.$ind->id)}}"><button type="button" class="btn btn-danger">Delete</button></a>

@@ -19,7 +19,11 @@ class ProductController extends Controller
         $order = Order::select('ip')->where('ip', '=', Request()->ip())->get();
         $count = count($order);
         $index = Product::get();
-        return view('frontend.product.home', compact('index'))->with('count', $count);
+        if(count($index) > 0){
+            return view('frontend.product.home', compact('index'))->with('count', $count);
+        }else{
+            return view('frontend.product.notFound')->with('count', $count);
+        }
     }
     public function order($id)
     {
@@ -52,12 +56,11 @@ class ProductController extends Controller
             'size'      => $request->_size,
             'color'     => $request->_color,
             'quantity'  => $request->_count,
-            'drive_cost'=> $address[0],
-            'total'     => ($request->_total + $address[0]),
+            // 'drive_cost'=> $address[0],
+            'total'     => ($request->_total),
             'username'  => $request->name,
             'phone'     => $request->phone,
             'email'     => $request->email,
-            'city'   => $address[1],
             'address'      => $request->street,
             'state'     => $request->state,
             'ip'        => Request()->ip(),

@@ -2,7 +2,7 @@
 
 @section('content')
 <section>
-    <div class="small-container single-product">
+    <div class="small-container single-product" style="margin-top:126px">
         <div class="child">
             <div class="halfchild">
                     @php

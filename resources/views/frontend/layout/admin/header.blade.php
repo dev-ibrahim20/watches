@@ -1,6 +1,6 @@
   <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm" style="height: 103px">
             <div class="container">
-                <a class="navbar-brand" href="{{ url('/home') }}">Hustler</a>
+                <a class="navbar-brand" href="{{ url('/home') }}">Wustler</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -15,7 +15,7 @@
                             <a class="nav-link" href="{{route('users')}}">Users</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{route('product_admin')}}">T-shirt</a>
+                            <a class="nav-link" href="{{route('product_admin')}}">Watches</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="{{route('order_dash')}}">Order</a>
