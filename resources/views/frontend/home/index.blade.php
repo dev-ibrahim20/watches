@@ -5,16 +5,16 @@
     <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" style="">
         <div class="carousel-inner" data-interval="2000" style="height: 800px">
           <div class="carousel-item active">
-            <img src="{{asset('frontend/images/DSC01543.jpg')}}" class="d-block w-100" alt="...">
+            <img src="{{asset('frontend/images/p1.jpg')}}" class="d-block w-100" alt="...">
           </div>
           <div class="carousel-item">
-            <img src="{{asset('frontend/images/header-2.jpg')}}" class="d-block w-100" alt="...">
+            <img src="{{asset('frontend/images/p2.jpg')}}" class="d-block w-100" alt="...">
           </div>
           <div class="carousel-item">
-            <img src="{{asset('frontend/images/header-1.jpg')}}" class="d-block w-100" alt="...">
+            <img src="{{asset('frontend/images/p3.jpg')}}" class="d-block w-100" alt="...">
           </div>
           <div class="carousel-item">
-            <img src="{{asset('frontend/images/header-4.jpg')}}" class="d-block w-100" alt="...">
+            <img src="{{asset('frontend/images/p4.jpg')}}" class="d-block w-100" alt="...">
           </div>
           <section>
           <div class="main" style="position: relative">

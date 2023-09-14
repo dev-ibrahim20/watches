@@ -22,10 +22,6 @@
         <input type="file" class="form-control" id="exampleInputPassword1" name="image" multiple="multiple" >
       </div>
       <div class="mb-3">
-        <label for="exampleInputPassword1" class="form-label">Size</label>
-        <input type="text" class="form-control" id="exampleInputPassword1" name="size" required value="{{$prod->size}}">
-      </div>
-      <div class="mb-3">
         <label for="exampleInputPassword1" class="form-label">Color</label>
         <input type="text" class="form-control" id="exampleInputPassword1" name="color" value="{{$prod->color}}" placeholder="input your Color Like Green-Blue-Red" required>
       </div>

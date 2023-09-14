@@ -35,7 +35,6 @@ class ProductController extends Controller
             'disc'          => $request->disc,
             'price'         => $request->price,
             'image'         => $file,
-            'size'          => $request->size,
             'color'         => $request->color,
         ]);
 
@@ -48,7 +47,7 @@ class ProductController extends Controller
         if (!$products)
             return redirect()->back();
 
-        $prod = Product::select('id', 'name', 'disc', 'price', 'image', 'size', 'color')->find($id);
+        $prod = Product::select('id', 'name', 'disc', 'price', 'image', 'color')->find($id);
 
         return view('Admin/product/editProduct', compact('prod'));
     }
@@ -68,7 +67,6 @@ class ProductController extends Controller
                 'disc' => $request->disc,
                 'price' => $request->price,
                 'image' => $file,
-                'size' => $request->size,
                 'color' => $request->color,
             ]);
         } else {
@@ -77,7 +75,6 @@ class ProductController extends Controller
                 'disc' => $request->disc,
                 'price' => $request->price,
                 'image' => $_product->image,
-                'size' => $request->size,
                 'color' => $request->color,
             ]);
         }

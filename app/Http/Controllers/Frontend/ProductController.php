@@ -22,12 +22,12 @@ class ProductController extends Controller
         if(count($index) > 0){
             return view('frontend.product.home', compact('index'))->with('count', $count);
         }else{
-            return view('frontend.product.notFound')->with('count', $count);
+            return view('frontend.product.notFoundProduct')->with('count', $count);
         }
     }
     public function order($id)
     {
-        $data = Product::select('id', 'name', 'price', 'color', 'size', 'image', 'disc')->find($id);
+        $data = Product::select('id', 'name', 'price', 'color', 'image', 'disc')->find($id);
         $order = Product::select('image')->skip(1)->take(4)->get()->find($id);
         return view('frontend.product.order', compact('data', 'order'));
     }
@@ -39,7 +39,6 @@ class ProductController extends Controller
         $check = [
             '_name' => $request->_name,
             '_image' => $request->_image,
-            '_size' => $request->size,
             '_color' => $request->color,
             '_count' => $request->count,
             '_total' => $total,
@@ -53,7 +52,6 @@ class ProductController extends Controller
         Order::create([
             'name'      => $request->_name,
             'image'     => $request->_image,
-            'size'      => $request->_size,
             'color'     => $request->_color,
             'quantity'  => $request->_count,
             // 'drive_cost'=> $address[0],
@@ -76,7 +74,11 @@ class ProductController extends Controller
     {
         $data = Product::get();
         $order = Order::get();
-        return view('frontend.product.show', compact('order', 'data'));
+        if(count($order) > 0){
+            return view('frontend.product.show', compact('order', 'data'));
+        }else{
+            return view('frontend.product.notFoundOrder');
+        }
     }
 
     public function deleteOrder($id)

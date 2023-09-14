@@ -8,7 +8,6 @@
                 @csrf
                 <input type="hidden" value="{{$check['_name']}}" name="_name">
                 <input type="hidden" value="{{$check['_image']}}" name="_image">
-                <input type="hidden" value="{{$check['_size']}}" name="_size">
                 <input type="hidden" value="{{$check['_color']}}" name="_color">
                 <input type="hidden" value="{{$check['_count']}}" name="_count">
                 <input type="hidden" value="{{$check['_total']}}" name="_total">

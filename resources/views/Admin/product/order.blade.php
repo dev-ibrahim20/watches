@@ -9,7 +9,6 @@
             <th scope="col">#</th>
             <th scope="col">Name product</th>
             <th scope="col">Image</th>
-            <th scope="col">size</th>
             <th scope="col">color</th>
             <th scope="col">Quantity</th>
             <th scope="col">total</th>
@@ -35,7 +34,6 @@
                 <td><img style="width: 50px" src="{{asset('frontend/images/product/'.$image[0])}}" alt=""></td>
                 @break
                 @endfor    
-                <td>{{$ord->size}}</td>
                 <td>{{$ord->color}}</td>
                 <td>{{$ord->quantity}}</td>
                 <td>{{$ord->total}}</td>

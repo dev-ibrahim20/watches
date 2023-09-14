@@ -26,12 +26,6 @@
                     <label for="address">Address</label>
                     <input type="text" class="form-control" id="address" placeholder="1234 Main St" required="" name="address" value="{{$edit->address}}">
                 </div>
-                <select class="form-select form-select-sm" aria-label=".form-select-sm example" style="width: 200px" name="size" required="">
-                    <option disabled value="" selected>Select Size</option>
-                    @for($i = 0; $i < count($size); $i++)
-                    <option value="{{$size[$i]}}">{{$size[$i]}}</option>
-                    @endfor
-                </select>
                 <div class="row">
                     <div class="col-md-4 mb-3">
                         <label for="state">State</label>

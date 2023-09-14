@@ -15,7 +15,8 @@
                 <img src="{{asset('frontend/images/product/'.$imge[0])}}">
                 @break
                 @endfor
-                <h5><span>Name</span>: {{$ind->name}}-<span>Color</span>: {{$ind->color}}</h5>
+                <h5><span>Name</span>: {{$ind->name}}</h5>
+                <h5><span>Color</span>: {{$ind->color}}</h5>
                 <h5><span>Price</span>: {{$ind->total - $ind->drive_cost}} L.E</h5>
                 <hr>
                 <h5><span>Check</span>: {{$ind->total}} L.E</h5>

@@ -11,7 +11,6 @@
             <th scope="col">disc</th>
             <th scope="col">price</th>
             <th scope="col">image</th>
-            <th scope="col">size</th>
             <th scope="col">Color</th>
             <th scope="col">Created at</th>
             <th scope="col">Control</th>
@@ -31,7 +30,6 @@
                 <td><img style="width: 50px" src="{{asset('frontend/images/product/'. $imge[0])}}" alt=""></td>
                 @break
                 @endfor
-                <td>{{$pro->size}}</td>
                 <td>{{$pro->color}}</td>
                 <td>{{$pro->created_at}}</td>
                 <td>

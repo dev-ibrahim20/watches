@@ -13,7 +13,7 @@
         <h2>Catalog</h2>
     </div>
     <div class="child">
-        <div class="alert alert-danger" style='height: 500px'>Sorry, not found anything here.....</div>
+        <div class="alert alert-danger" style='height: 500px'>Sorry, not found Product here.....</div>
     </div>
 </div>
 @endsection

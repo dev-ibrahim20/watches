@@ -30,12 +30,6 @@
                     <input type="hidden" value="{{$data->name}}" name="_name">
                     <input type="hidden" value="{{$data->image}}" name="_image">
                     <input type="hidden" value="{{$data->price}}" name="_price">
-                    <select class="form-select form-select-sm" aria-label=".form-select-sm example" style="width: 200px" name="size" required="">
-                        <option disabled value="" selected>Select Size</option>
-                        @for($i = 0; $i < count($size); $i++)
-                        <option value="{{$size[$i]}}">{{$size[$i]}}</option>
-                        @endfor
-                    </select>
                     <select class="form-select form-select-sm" aria-label=".form-select-sm example" style="width: 200px" name="color" required="">
                         <option disabled value="" selected>Select color</option>
                         @for($i = 0; $i < count($color); $i++)
