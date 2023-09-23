@@ -6,7 +6,7 @@
         <h2>Your Orders</h2>
     </div>
     <div class="child" style="">
-    <div class="alert alert-danger" style='height: 500px'>Sorry, not found Order here.....</div>
+    <div class="alert alert-success" style='height: 500px'>Sorry, not found Order here.....</div>
     </div>
 </div>
 @endsection

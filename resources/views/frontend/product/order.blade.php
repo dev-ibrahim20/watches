@@ -38,7 +38,7 @@
                     </select>
                     <select class="form-select form-select-sm" aria-label=".form-select-sm example" style="width: 200px" name="count" required="">
                         <option selected value="">0</option>
-                        @for($i = 1; $i <=20; $i++)
+                        @for($i = 1; $i <=5; $i++)
                         <option value="{{$i}}">{{$i}}</option>
                         @endfor
                       </select>
