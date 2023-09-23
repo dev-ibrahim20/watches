@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Sep 14, 2023 at 05:20 PM
+-- Generation Time: Sep 23, 2023 at 08:44 PM
 -- Server version: 8.0.30
 -- PHP Version: 8.1.10
 
@@ -100,13 +100,6 @@ CREATE TABLE `orders` (
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
 
---
--- Dumping data for table `orders`
---
-
-INSERT INTO `orders` (`id`, `name`, `image`, `color`, `quantity`, `total`, `username`, `phone`, `email`, `address`, `state`, `ip`, `created_at`, `updated_at`) VALUES
-(21, 'Offer 5', '1694710327.b.png', 'red', '1', '2052', 'Ibrahem', '0100123456', 'Yasser@Gmakll.com', 'mansura/Egypt', 'male', '127.0.0.1', '2023-09-14 13:55:26', '2023-09-14 13:55:26');
-
 -- --------------------------------------------------------
 
 --
@@ -166,13 +159,6 @@ CREATE TABLE `products` (
   `updated_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
-
---
--- Dumping data for table `products`
---
-
-INSERT INTO `products` (`id`, `name`, `disc`, `price`, `image`, `color`, `updated_at`, `created_at`) VALUES
-(18, 'Offer 5', 'This is a good offer', '2052', '1694710327.b.png', 'red', '2023-09-14 13:52:07', '2023-09-14 13:52:07');
 
 -- --------------------------------------------------------
 
@@ -286,7 +272,7 @@ ALTER TABLE `migrations`
 -- AUTO_INCREMENT for table `orders`
 --
 ALTER TABLE `orders`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
 
 --
 -- AUTO_INCREMENT for table `personal_access_tokens`
@@ -298,7 +284,7 @@ ALTER TABLE `personal_access_tokens`
 -- AUTO_INCREMENT for table `products`
 --
 ALTER TABLE `products`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 
 --
 -- AUTO_INCREMENT for table `users`
