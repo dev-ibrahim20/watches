@@ -2,6 +2,6 @@
 
 @section('content')
 <div class="container">
-    Hello in Dashboard
+    Hello in Fit Out Store
 </div>
 @endsection

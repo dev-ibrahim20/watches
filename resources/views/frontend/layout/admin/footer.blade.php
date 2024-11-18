@@ -1,5 +1,5 @@
 <footer class="footer">
-    <p class="footer-title">Copyrights @ <span>Wustler</span></p>
+    <p class="footer-title">Copyrights @ <span>Out-Fit</span></p>
     <div class="social-icons">
         <a href="#"><i class="fab fa-linkedin"></i></a>
         <a href="#"><i class="fab fa-twitter"></i></a>

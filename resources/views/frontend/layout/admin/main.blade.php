@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Wustler Store</title>
+        <title>Out Fit</title>
 
         @include('frontend.layout.admin.styles')
         @stack('styles')

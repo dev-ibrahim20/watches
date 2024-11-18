@@ -2,20 +2,18 @@
 @section('content')
 
     <!-- Start Section Hunstler -->
-    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" style="">
-        <div class="carousel-inner" data-interval="2000" style="height: 800px">
-          <div class="carousel-item active">
-            <img src="{{asset('frontend/images/p1.jpg')}}" class="d-block w-100" alt="...">
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" style="height: auto">
+        <div class="carousel-inner" data-interval="2000" style="height:800px ">
+          <div class="carousel-item active" style="height: 500px">
+            <img src="{{asset('frontend/images/main/1.jpg')}}" class="d-block w-100" alt="...">
           </div>
           <div class="carousel-item">
-            <img src="{{asset('frontend/images/p2.jpg')}}" class="d-block w-100" alt="...">
+            <img src="{{asset('frontend/images/main/2.jpg')}}" class="d-block w-100" alt="...">
           </div>
           <div class="carousel-item">
-            <img src="{{asset('frontend/images/p3.jpg')}}" class="d-block w-100" alt="...">
+            <img src="{{asset('frontend/images/main/3.jpg')}}" class="d-block w-100" alt="...">
           </div>
-          <div class="carousel-item">
-            <img src="{{asset('frontend/images/p4.jpg')}}" class="d-block w-100" alt="...">
-          </div>
+          
           <section>
           <div class="main" style="position: relative">
                 <div class="text" style="position: relative">
@@ -24,7 +22,7 @@
                     <a href="{{route('product')}}" class="main-btn">SHOP NOW</a>
                 </div>
            </div>
-        </section>
+          </section>
         </div>
     </div>
     <!-- End Section Hunstler -->
